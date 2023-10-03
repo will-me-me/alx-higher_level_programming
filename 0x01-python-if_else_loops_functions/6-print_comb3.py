@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
-for num in range(100):
-    if num != 99:
-        print("{:02d}".format(num), end=", ")
-    else:
-        print("{:02d}".format(num))
+for i in range(10):
+    for j in range(i + 1, 10):
+        if i == 8 and j == 9:
+            print(f"{i}{j}\n", end="")
+        else:
+            print(f"{i}{j}, ", end="")
